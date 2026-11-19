@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fresas con crema y yogurt, las más frías de Soledad.">
+<title>Fresas con crema y yogurt | Soledad</title>
+<style>
+:root{--pink:#f8dce5;--rose:#c93658;--cream:#fff9f3;--ink:#492b32;--soft:#fff0e7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+header{background:linear-gradient(135deg,#f8dce5,#fff0e7);padding:22px 7% 48px;text-align:center}
+nav{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}nav a{color:var(--ink);font-weight:bold;text-decoration:none}
+.hero{max-width:850px;margin:50px auto 0}.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.1;color:var(--rose);margin:12px 0}
+.hero p{font-size:1.15rem}.btn{display:inline-block;background:var(--rose);color:white;text-decoration:none;border:0;border-radius:28px;padding:13px 24px;font-weight:bold;cursor:pointer}
+section{max-width:1100px;margin:auto;padding:48px 7%}h2{color:var(--rose);font-size:2rem;text-align:center;margin-top:0}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 7px 24px #68334112;text-align:center;padding-bottom:20px}.card img{width:100%;display:block}.card h3{color:var(--rose);margin:14px 12px 5px}.card p{padding:0 18px;margin:6px}.price{font-weight:bold;color:var(--rose)}
+.about{background:var(--soft);border-radius:22px;text-align:center;padding:28px}
+form{max-width:650px;margin:auto;background:white;padding:26px;border-radius:20px;box-shadow:0 7px 24px #68334112}label{display:block;font-weight:bold;margin:13px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #dfc8ce;border-radius:10px;font:inherit}footer{text-align:center;background:var(--pink);padding:25px}.small{font-size:.9rem;color:#765b62}
+@media(max-width:560px){nav{gap:14px}.hero{margin-top:35px}section{padding:38px 5%}}
+</style>
+</head>
+<body>
+<header id="inicio"><nav><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#pedido">Pedidos</a><a href="#contacto">Contacto</a></nav>
+<div class="hero"><div style="font-size:3rem">🍓 🥣 🍓</div><h1>Fresas con crema y yogurt</h1><p><strong>¡Las más frías de Soledad!</strong><br>Un antojo delicioso, preparado con cariño y perfecto para compartir.</p><a class="btn" href="#productos">Ver nuestros productos</a></div></header>
+<section id="productos"><h2>Nuestros productos</h2><div class="products">
+<article class="card"><img src="imagenes/fresas-crema.svg" alt="Ilustración de fresas con crema"><h3>Fresas con crema</h3><p>Fresas frescas acompañadas de una crema suave y deliciosa.</p><p class="price">Precio: consultar</p></article>
+<article class="card"><img src="imagenes/yogurt-griego.svg" alt="Ilustración de fresas con yogurt griego"><h3>Fresas con yogurt griego</h3><p>Una combinación cremosa y refrescante para disfrutar.</p><p class="price">Precio: consultar</p></article>
+<article class="card"><img src="imagenes/especiales.svg" alt="Ilustración de fresas con toppings"><h3>Especiales</h3><p>Personaliza tu antojo con Nutella, brownie u Oreo.</p><p class="price">Precio: consultar</p></article>
+</div><p class="small">Antes de publicar, agrega los precios y tamaños reales de tus productos.</p></section>
+<section id="nosotros"><div class="about"><h2>Sobre nuestro emprendimiento</h2><p>Somos un emprendimiento dedicado a ofrecer fresas con crema y yogurt, con opciones deliciosas y toppings para que cada persona disfrute su combinación favorita.</p></div></section>
+<section id="pedido"><h2>Haz tu pedido</h2><p style="text-align:center">Completa los datos para preparar tu pedido por WhatsApp.</p><form id="orderForm">
+<label for="name">Nombre</label><input id="name" required placeholder="Tu nombre">
+<label for="product">Producto</label><select id="product" required><option value="">Selecciona un producto</option><option>Fresas con crema</option><option>Fresas con yogurt griego</option><option>Especial con Nutella, brownie u Oreo</option></select>
+<label for="quantity">Cantidad</label><input id="quantity" type="number" min="1" value="1" required>
+<label for="address">Dirección de entrega</label><input id="address" required placeholder="Tu dirección">
+<label for="details">Detalles adicionales</label><textarea id="details" rows="3" placeholder="Toppings o indicaciones (opcional)"></textarea><br><br><button class="btn" type="submit">Enviar pedido</button>
+<p class="small">Para activar WhatsApp, cambia el número de ejemplo por el número real del emprendimiento en el archivo index.html.</p></form></section>
+<section id="contacto"><h2>Contacto</h2><div class="about"><p>📍 Zona de atención: Soledad</p><p>📱 WhatsApp: agrega aquí tu número</p><p>🕒 Horarios: agrega aquí tus horarios</p></div></section>
+<footer><strong>Fresas con crema y yogurt 🍓</strong><p>Un dulce momento para disfrutar.</p></footer>
+<script>
+document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();
+const phone='57XXXXXXXXXX'; // Reemplaza por el WhatsApp real, con indicativo de país y sin signos.
+const fields=['name','product','quantity','address','details'].map(id=>document.getElementById(id).value);
+const msg='Hola, quiero hacer un pedido.\nNombre: '+fields[0]+'\nProducto: '+fields[1]+'\nCantidad: '+fields[2]+'\nDirección: '+fields[3]+'\nDetalles: '+fields[4];
+if(phone.includes('X')){alert('El formulario está listo. Agrega el número real de WhatsApp en el archivo index.html para activar los pedidos.');return;}
+window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(msg),'_blank');});
+</script></body></html>

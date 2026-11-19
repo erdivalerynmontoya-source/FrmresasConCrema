@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#ffe8ef"/><stop offset="1" stop-color="#fff6e9"/></linearGradient><linearGradient id="berry" x2="0" y2="1"><stop stop-color="#ff7189"/><stop offset="1" stop-color="#bd244d"/></linearGradient></defs>
+<rect width="800" height="520" rx="38" fill="url(#bg)"/><ellipse cx="400" cy="415" rx="245" ry="34" fill="#e9c6ce"/>
+<path d="M190 270 Q400 205 610 270 L565 390 Q400 455 235 390Z" fill="#fff" stroke="#e8cbd1" stroke-width="9"/>
+<path d="M205 275 Q400 205 595 275 Q400 330 205 275" fill="#fff5ee"/>
+<g fill="url(#berry)" stroke="#a91e43" stroke-width="3">
+<path d="M280 260 Q240 180 300 135 Q355 95 375 160 Q390 225 320 275Z"/>
+<path d="M370 250 Q340 175 405 125 Q465 90 480 160 Q490 220 415 270Z"/>
+<path d="M455 275 Q430 205 495 170 Q560 145 570 215 Q560 270 500 295Z"/>
+<path d="M330 310 Q295 250 350 210 Q410 190 420 255 Q410 310 350 330Z"/>
+</g>
+<g fill="#fff2b2"><circle cx="300" cy="180" r="5"/><circle cx="325" cy="210" r="5"/><circle cx="405" cy="165" r="5"/><circle cx="445" cy="200" r="5"/><circle cx="500" cy="220" r="5"/><circle cx="530" cy="250" r="5"/><circle cx="355" cy="270" r="5"/></g>
+<g fill="#398c55"><path d="M300 140q-35-45-62-18 30 3 62 18M300 140q5-48 38-48-17 25-38 48M405 130q-4-43-38-42 19 19 38 42M405 130q30-42 57-20-30 2-57 20M495 175q-6-40-39-37 19 15 39 37M495 175q34-32 56-8-28-5-56 8"/></g>
+<text x="400" y="485" text-anchor="middle" font-family="Arial" font-size="25" fill="#a73555" font-weight="bold">Fresas con crema 🍓</text>
+</svg>
